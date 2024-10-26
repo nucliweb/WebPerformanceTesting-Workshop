@@ -1,0 +1,31 @@
+{
+  "name": "e2e-webperf-testing",
+  "version": "1.0.0",
+  "description": "end-to-end web performance testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run cy:open:chrome",
+    "cy:open": "cypress open",
+    "cy:open:chrome": "cypress open --e2e --browser chrome",
+    "cy:open:debugging": "cypress open --browser chrome --remote-debugging-port=9222"
+  },
+  "keywords": [
+    "webperf",
+    "testing",
+    "e2e",
+    "end-to-end",
+    "perfomance",
+    "core web vitals"
+  ],
+  "author": "Joan Leon | @nucliweb",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome-remote-interface": "^0.31.14",
+    "cypress": "^13.15.0",
+    "cypress-real-events": "^1.13.0",
+    "cypress-web-vitals": "^4.1.2"
+  },
+  "dependencies": {
+    "chrome-remote-interface": "^0.33.2"
+  }
+}
